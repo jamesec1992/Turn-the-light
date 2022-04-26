@@ -16,14 +16,26 @@
     <p>Using JavaScript to change the value of the source (scr) attribute of an image</p>
 
     <button id="myBtn1">Switch on the Light</button>
-    <img id="bulb" src="img/bulb off.PNG" alt="An image of a bulb">
+
+    <img id="myImage" src="img/lightoff.jpg">
+
     <button id="myBtn2">Switch off the Light</button>
     
 
     <!-- Internal Javascript -->
     <script>
-        
-    </script>
-    
+        const btn1 = document.getElementById("myBtn1");
+        const btn2 = document.getElementById("myBtn2");
+        var img = document.getElementById("myImage")
+
+        btn1.addEventListener("click",function(){
+            img.src="img/lighton.jpg"; 
+        })
+
+        btn2.addEventListener("click",function(){
+            img.src="img/lightoff.jpg"; 
+        })
+
+    </script>  
 </body>
 </html>

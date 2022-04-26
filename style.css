@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Tapestry;
+    src: url(fonts/Tapestry-Regular.ttf);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-family: Tapestry;
+}
+
+body{
+    text-align: center;
+    padding: 5rem;
+    background-color: rgb(216, 212, 212);
+    color: rgb(122, 45, 122);
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+img{
+    padding: 1rem 2rem;
+}
+
+button{
+    font-size: 1rem;
+    background-color: rgb(122, 45, 122);
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 7px;
+    border-bottom: none;
+    cursor: pointer;
+}
